@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+header .contenedorheader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header .contenedorheader .izquierdo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+header .contenedorheader .izquierdo img {
+    width: 30px;
+    height: 30px;
+
+}
+
+
+header .contenedorheader .izquierdo li {
+    display: inline;
+    padding-left: 30px;
+    font-size: 15px;
+
+
+
+}
+
+header .contenedorheader .izquierdo a {
+    color: black;
+    text-decoration: none;
+}
+
+header .contenedorheader .izquierdo .inicio button {
+    text-align: center;
+    border-radius: 20px;
+    height: 40px;
+    width: 80px;
+    background-color: black;
+}
+
+header .contenedorheader .izquierdo .inicio .boton a {
+    color: white;
+}
+
+
+
+
+header .contenedorheader .buscador {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 15px;
+    width: 600px;
+    border-radius: 30px;
+    height: 25px;
+
+}
+
+header .contenedorheader .buscador input {
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    width: 400px;
+}
+
+
+header .contenedorheader .derecho {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+
+
+}
+
+
+header .contenedorheader .derecho li {
+    display: inline;
+    padding-left: 50px;
+
+}
+
+header .contenedorheader .derecho img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* aqui empieza el main */
+
+
+main .contenedorimagenes{
+    display: flex;
+}
+
+main .contenedorimagenes .imagen {
+    position: relative;
+    background-color: aqua;
+    height: 250px;
+    width: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 500ms ease-out;
+
+}
+
+main .contenedorimagenes .imagen img {
+    width: 100%;
+    height: 100%;
+}
+
+
+main .contenedorimagenes .capa {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    visibility: hidden;
+    transition: all 500ms ease-out;
+
+}
+
+main .contenedorimagenes .imagen .capa .infotop {
+    display: flex;
+    justify-content: right;
+    padding-top: 15px;
+    width: 100%;
+
+}
+
+main .contenedorimagenes .capa .infobottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+main .contenedorimagenes .capa .infobottom img {
+
+    height: 35px;
+    width: 35px;
+    padding-left: 50px;
+}
+
+
+main .contenedorimagenes .imagen:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+main .contenedorimagenes .capa button{
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 150px;
+}
+
+

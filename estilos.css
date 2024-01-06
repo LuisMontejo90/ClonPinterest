@@ -111,10 +111,9 @@ main .contenedorimagenes{
 
 main .contenedorimagenes .imagen {
     position: relative;
-    background-color: aqua;
     height: 250px;
     width: 350px;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
     transition: all 500ms ease-out;
 
@@ -123,6 +122,9 @@ main .contenedorimagenes .imagen {
 main .contenedorimagenes .imagen img {
     width: 100%;
     height: 100%;
+    padding: 10px;
+    
+
 }
 
 
